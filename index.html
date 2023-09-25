@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+  <title>Product preview card component @muhaideennausar</title>
+  
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body{
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #f2ebe3;
+    }
+    .container{
+      width: 550px;
+      height: 400px;
+      background-color: white;
+      display: flex;
+      border-radius: 10px;
+      box-shadow: 0 0 20px #00000005;
+      overflow: hidden;
+    }
+    .left{
+      width: 100%;
+    }
+    .product-image{
+      height: 100%;
+      object-fit: cover;
+    }
+    .right{
+      width: 100%;
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .category{
+      font-family: 'Montserrat', sans-serif;
+      text-transform: uppercase;
+      font-size: 12px;
+      letter-spacing: 5px;
+      color: #6c7289;
+    }
+    .product-details{
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .title{
+      font-family: 'Fraunces', serif;
+      font-size: 2rem;
+      line-height: 1;
+      color: #1c232b;
+    }
+    .detail{
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.8rem;
+      line-height: 1.5;
+      color: #6c7289;
+    }
+    .price-tag{
+      display: flex;
+      gap: 18px;
+      align-items: center;
+    }
+    .price{
+      font-family: 'Fraunces', serif;
+      font-size: 2rem;
+      color: #3c8067;
+    }
+    .price-before{
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.7rem;
+      color: #6c7289;
+      text-decoration: line-through;
+    }
+    .cart-btn{
+      height: 45px;
+      width: 100%;
+      border-radius: 7px;
+      border: none;
+      outline: none;
+      background-color: #3c8067;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      cursor: pointer;
+    }
+    .cart-btn:hover{
+      background-color: #1a3f31;
+    }
+    .cart-icon{
+      height: 35%;
+    }
+    .add-cart{
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.8rem;
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <section class="left">
+      <img src="images/image-product-desktop.jpg" alt="Product Image" class="product-image">
+    </section>
+    <section class="right">
+      <span class="category">Perfume</span>
+      <div class="product-details">
+        <h2 class="title">Gabrielle Essence Eau De Parfum</h2>
+        <p class="detail">A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of CHANEL.</p>
+        <div class="price-tag">
+          <span class="price">&dollar;149.99</span>
+          <span class="price-before">&dollar;169.99</span>
+        </div>
+      </div>
+      <button class="cart-btn"><img src="images/icon-cart.svg" alt="Cart Icon" class="cart-icon"><span class="add-cart">Add to Cart</span></button>
+    </section>
+  </main>
+</body>
+</html>
